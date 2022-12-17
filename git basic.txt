@@ -1,0 +1,50 @@
+###Github guideline #########################
+…or create a new repository on the command line
+echo "# git_learned" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/quangdangcodegym/git_learned.git
+git push -u origin main
+
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/quangdangcodegym/git_learned.git
+git branch -M main
+git push -u origin main
+
+###Config mail and user#########################
+git config --global user.name "YOUR NAME" .
+git config --global user.email "YOUR EMAIL ADDRESS"
+
+###Create branch name#########################
+git branch -M 'branch_name'
+
+###Create branch and using this branch#########################
+git checkout -b 'branch_name'
+
+###Using branch#########################
+git checkout 'branch_name'
+
+###Git push#########################
+git push -u origin 'branch_name'
+Example:
+git push -u origin main
+git push -u origin dev
+
+###Git add remove remote#########################
+git remote add origin https://github.com/quangdangcodegym/git_learned.git
+git remote remote origin https://github.com/quangdangcodegym/git_learned.git
+
+###Error when create branch and push#########################
+error: failed to push some refs to 'https://github.com/quangdangcodegym/css_learned.git'hint: 
+Updates were rejected because the tip of your current branch is behindhint: its remote counterpart. 
+Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --hel
+
+###SOLVED Error when create branch and push#########################
+git push -f origin 'branch_name'
+Example: 
+git push -f origin main
