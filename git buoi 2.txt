@@ -1,0 +1,4 @@
+B1: Len trên git hub thay đổi gì đó
+B2: Pull về máy
+B3: Dưới máy này thay đổi nội dung gì đó
+B4: Push lên lại 
