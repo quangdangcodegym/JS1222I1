@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <!-- 
+        table
+            caption: tiêu đề của bảng
+            thead: dòng chứa tiêu đề
+            tbody: dòng chứa dữ liệu
+            tfoot: dòng chứa dữ liệu tổng hợp
+        tr (table row): tạo ra 1 dòng
+        th (table heading): ô chứa tiêu đề
+        td (table data): ô chứa dữ liệu
+     -->
+     <table border="1">
+        <tbody>
+            <tr>
+                <td rowspan="11" style="font-weight: bolder;">TCB</td>
+                <td style="text-align:center; font-weight:bolder;">Order no:</td>
+                <td colspan="3">#ABC01</td>
+            </tr>
+            <tr>
+                <td style="text-align:center; font-weight:bolder;">Order date:</td>
+                <td colspan="3">23-Mar-2016</td>
+            </tr>
+            <tr>
+                <td colspan="4" style="text-align:center; font-weight:bolder;">Customer</td>
+            </tr>
+            <tr>
+                <td style="text-align:center; font-weight:bolder;">Name:</td>
+                <td colspan="3">John Papas </td>
+            </tr>
+            <tr>
+                <td style="text-align:center; font-weight:bolder;">Address:</td>
+                <td colspan="3">Inpendence Day 5th str, 11511</td>
+            </tr>
+            <tr>
+                <td colspan="4" style="text-align:center; font-weight:bolder;">Order Details</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Of Mice and Men</td>
+                <td>Book</td>
+                <td style="text-align: right;">10.00 &euro;</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Les Miserables</td>
+                <td>Book</td>
+                <td style="text-align: right;">12.00 &euro;</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Game of Thrones - S01</td>
+                <td>DVD</td>
+                <td style="text-align: right;">50.00 &euro;</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Samsung Galaxy</td>
+                <td>Mobile Phone</td>
+                <td style="text-align: right;">200.00 &euro;</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align:right; font-weight:bolder;">Total: </td>
+                <td style="text-align: right;">270.00 &euro;</td>
+            </tr>
+        </tbody>
+     </table>
+</body>
+</html>
