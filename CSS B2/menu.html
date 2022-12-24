@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        /*  Khoảng trắng: lấy con cháu 
+            > : lấy con trực tiếp
+            tag.class | tag#id: tìm tới cái thẻ với thuộc tính có class = ? hoặc id=?
+        */
+        ul li.menu-item{
+            float: left;
+        }
+        ul li{
+            padding: 10px;
+        }
+        ul li a{
+            padding: 10px;
+        }
+        ul li.menu-item{
+            position: relative;
+            background-color: burlywood;
+        }
+        ul li:hover{
+            background-color: cadetblue;
+        }
+        ul li.menu-item-child{
+            background-color: cornflowerblue;
+        }
+        li.menu-item > ul{
+            display: none;
+        }
+        li.menu-item:hover > ul{
+            display: block;
+        }
+        li.menu-item > ul{
+            position: absolute;
+            top:100%;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <ul>
+            <li class="menu-item"><a href="">Trang chủ</a></li>
+            <li class="menu-item">
+                <a href="">Sản phẩm</a>
+                <ul>
+                    <li class="menu-item-child"><a href="">Iphone X</a></li>
+                    <li class="menu-item-child"><a href="">Iphone 11</a></li>
+                    <li class="menu-item-child"><a href="">Ihone 12</a></li>
+                </ul>
+            </li>
+            <li class="menu-item"><a href="">Danh mục</a></li>
+        </ul>
+    </div>
+</body>
+</html>
