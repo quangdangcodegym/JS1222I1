@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" onclick="document.write('<h1>Hehe</h1>')" value="Write" />
+
+    <input type="button" onclick="handleWrite1()" value="Write 1" />
+
+
+    <input type="button" onclick="handleWriteConsole()" value="Write console log" />
+
+
+
+
+    <script>
+        function handleWrite1(){
+            document.write('<a href="https://vnexpress.net/">Hehe write 1</a>')
+        }
+        function handleWriteConsole(){
+            console.log("ahihi");
+        }
+    </script>
+</body>
+</html>
