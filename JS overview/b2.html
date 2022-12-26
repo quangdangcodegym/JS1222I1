@@ -12,13 +12,22 @@
     <input type="text" id="idPassword" placeholder="password" >
 
 
-    <input type="button" value="clear" onclick="handleClear()">
+    <input type="button" value="show" onclick="handleBtnClear()">
+    <input type="button" value="delete" onclick="handleBtnDelete()">
 
     <script>
-        function handleClear(){
+        function handleBtnClear(){
             // 
-            var fullname = document.getElementById("idEmail").value;
-            alert(fullname)
+            var fullname = document.getElementById("idFullName").value;
+            var email = document.getElementById("idEmail").value;
+            var password = document.getElementById("idPassword").value;
+            
+            alert(fullname + " - " + email + " : " + password)
+        }
+        function handleBtnDelete(){
+            document.getElementById("idFullName").value = "";
+            document.getElementById("idEmail").value = "";
+            document.getElementById("idPassword").value = "";
         }
     </script>
 </body>

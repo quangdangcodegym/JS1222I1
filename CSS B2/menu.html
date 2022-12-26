@@ -50,16 +50,31 @@
         li.menu-item > ul{
             position: absolute;
             top:100%;
-            left: 0px;
+            left: 0px; 
             
         }
+        /**
+        + thẻ div: bọc lại các thẻ, hắn chiếm luôn 1 dòng
+        + selector: tìm tới các thẻ theo: id, class, tag
+            id: '#'
+            class: '.'
+            tag: div, ul, li, a
+            ',': gom nhiều thẻ cùng css
+            " ": div li => Lấy tất cả các thẻ li con/chau cua div
+            ">": div>ul>li, ul>li
+            tag.[thuoctinh]: 
+
+            li.menu-item{
+
+            }
+        **/
         
     </style>
 </head>
 <body>
     <div id="menu">
         <ul>
-            <li class="menu-item"><a href="">Trang chủ</a></li>
+            <li class="menu-item"><a href="" onclick="hanldClick()">Trang chủ</a></li>
             <li class="menu-item">
                 <a href="">Sản phẩm</a>
                 <ul>
@@ -71,5 +86,10 @@
             <li class="menu-item"><a href="">Danh mục</a></li>
         </ul>
     </div>
+    <script>
+        function hanldClick(){
+            alert("Hello javascript")
+        }
+    </script>
 </body>
 </html>
