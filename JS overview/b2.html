@@ -16,8 +16,23 @@
     <input type="button" value="delete" onclick="handleBtnDelete()">
 
     <script>
+        // viết code javascript trong cặp thẻ <script>, nó được đặt ở trong the body hoăc head
+        // Ngoài ra có thể liên kết bằng file riêng
         function handleBtnClear(){
-            // 
+            
+            /**
+                var fullname:  khai báo biến tên là fullname
+                alert('...'): hiện lên cảnh báo
+                document.write('...'): ghi 1 chuỗi xuống thẻ body
+                Xử lý khi 1 nút được nhấn:
+                    + định nghĩa cái hàm: function handleBtnDelete()
+                    + gọi hàm đó: onclick="handleBtnDelete()"
+                var fullname = document.getElementById("idFullName").value;  
+                ==> lấy giá trị value của thẻ input id= idFullName. Rồi đưa vào biến fullname
+
+                document.getElementById("idPassword").value = "";
+                ==> giá trị value của the input id = idPassword được gán bằng "";
+             **/
             var fullname = document.getElementById("idFullName").value;
             var email = document.getElementById("idEmail").value;
             var password = document.getElementById("idPassword").value;
