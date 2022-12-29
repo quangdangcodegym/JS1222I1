@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="conditional.js"></script>
+
+    <style>
+        .container label{
+            display: block;
+        }
+        .tdTable{
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+        #lbResult{
+            color: blue;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <td>
+                    <div class="tdTable">
+                        <label>Amount</label>
+                        <input id="idTxtAmount" />
+                    </div>
+                </td>
+                <td>
+                    <div class="tdTable">
+                        <label>From Currency</label>
+                        <select id="idSeFromCurrency">
+                            <option value="VND">Việt Nam</option>
+                            <option value="USD">USD</option>
+                        </select>
+                    </div>
+                </td>
+                <td>
+                    <div class="tdTable">
+                        <label>To Currency</label>
+                        <select id="idSeToCurrency">
+                            <option value="VND">Việt Nam</option>
+                            <option value="USD">USD</option>
+                        </select>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <button type="button" onclick="handleConvertClick()">Convert</button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <label id="idLbResult">Result:</label>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        function handleConvertClick(){
+            let txtAmount = document.getElementById("idTxtAmount").value;
+            let seFromCurrency = document.getElementById("idSeFromCurrency").value;
+            let seToCurrency = document.getElementById("idSeToCurrency").value;
+
+            let result;
+            if(seFromCurrency == 'USD' && seToCurrency == 'VND'){
+                result = txtAmount * 23000;
+            }
+            if(seFromCurrency == 'USD' && seToCurrency == 'USD'){
+                result = txtAmount;
+            }
+            if(seFromCurrency == 'VND' && seToCurrency == 'VND'){
+                result = txtAmount;
+            }
+            if(seFromCurrency == 'VND' && seToCurrency == 'USD'){
+                result = txtAmount/23000;
+            }
+            
+            document.getElementById("idLbResult").innerText = "Result: " + result;
+
+        }
+    </script>
+</body>
+</html>
