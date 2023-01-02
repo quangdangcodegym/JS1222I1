@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .row{
+            margin-bottom: 10px;
+        }
+        .footer{
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Caculator</h1>
+        <div class="row">
+            <input id="idTxtNumber1" />
+            <input id="idTxtNumber2" />
+        </div>
+        <div class="row">
+            <input id="idBtnAddition" type="button" value="Addition(+)" onclick="handleAddClick()"/>
+            <input id="idBtnSubtraction" type="button" value="Subtraction(+)" onclick="handleSubClick()"/>
+            <input id="idBtnMultiplication" type="button" value="Multiplication(*)" onclick="handleMulClick()"/>
+            <input id="idBtnDivision" type="button" value="Division(/)" onclick="handleDivClick()"/>
+        </div>
+        <div class="footer">
+            <label>Result</label>
+            <label>JS1222I1</label>
+        </div>
+    </div>
+    <script>
+        function handleAddClick(){
+            let number1 = Number(document.getElementById("idTxtNumber1").value);
+            let number2 = Number(document.getElementById("idTxtNumber2").value);
+
+
+
+            let total = number1 + number2;
+            // --- lấy ra thẻ theo id
+            // document.getElementById("idResult").innerText = "Result: " + total;
+            // --- Lấy danh sách thẻ theo tên class
+            // document.getElementsByClassName("cResult")[0].innerText = "Result: " + total; 
+            // --- lấy ra danh sách thẻ theo TÊN THẺ
+            // document.getElementsByTagName("label")
+            // --- lấy ra thẻ đầu tiên theo selector
+            // document.querySelector(".footer > label").innerText = "Result: " + total;   
+            // --- lấy ra 1 danh sách thẻ theo selector
+            document.querySelectorAll(".footer > label")[0].innerText = "Result query selector all" + total;
+        }
+    </script>
+</body>
+</html>

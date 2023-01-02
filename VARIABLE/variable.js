@@ -16,6 +16,9 @@ const max = 10;     // Khai báo hằng số thì dùng const
 console.log(max);
 
 let x1 = "";        // "",0, null, underfine ==> quy về đung/sai là FALSE
+x1 = 0;
+x1= null;
+x1=undefined;
 console.log(Boolean(x1));
 
 let x2 = 30;        // nếu có giá trị => quy về dung/sai thì là TRUE
@@ -47,11 +50,11 @@ console.log(number1+number2)
 let number3;        // underfine
 console.log(number3)
 number1 = number1 + number3;
-console.log( number1)
+console.log( number1)       //NaN   Not a number
 
 let number4 = null      // có giá trị null
 number4 = number1 + number3;
-console.log(number4)
+console.log(number4)        // NaN not a number
 
 
 
