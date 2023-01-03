@@ -116,6 +116,7 @@
         console.log(number1 + " bé hon " + number2);
     }
 
+    // ... ? ... : ...
     number1 > number2 ? console.log(`${number1} lon hon ${number2}`) : console.log(`${number1} bé hon ${number2}`);
      */
 
