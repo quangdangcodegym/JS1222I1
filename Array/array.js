@@ -71,6 +71,23 @@ for(let i=0;i<arr.length;i++){
     }
 }
 
+
+// tìm xem số 7 xuất hiện lần thứ 3 tại ví trí mấy
+let arr = [1, 9, 7, 10, 4, 5, 7, 16, 8, 7];
+console.log(arr);
+let value = 7;
+let count =0;
+for(let i=0;i<arr.length;i++){
+    if(count==2 && arr[i] == value){
+        console.log("Vi tri " + i);
+        break;
+    }
+    if(arr[i]== value){
+        count++;
+    }
+}
+
+
 */
 
 
@@ -85,19 +102,8 @@ for(let i=0;i<arr.length;i++){
 
 
 
-// tìm xem số 7 xuất hiện lần thứ 3 tại ví trí mấy
-let arr = [1, 8, 7, 10, 7, 5, 7, 7, 8, 7];
-console.log(arr);
-let value = 7;
-let count =0;
-for(let i=0;i<arr.length;i++){
-    if(count==2 && arr[i] == value){
-        console.log("Vi tri " + i);
-        break;
-    }
-    if(arr[i]== value){
-        count++;
-    }
-}
 
+
+let arr = [1, 9, 7, 10, 4, 5, 7, 16, 8, 7];
+// tìm xem trong mảng có bao nhiêu số chính phương
 
