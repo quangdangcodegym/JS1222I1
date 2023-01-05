@@ -98,12 +98,16 @@ for(let i=0;i<arr.length;i++){
 
 
 
-
-
-
-
-
-
-let arr = [1, 9, 7, 10, 4, 5, 7, 16, 8, 7];
+let arr = [4, 9, 7, 10, 4, 5, 7, 16, 3, 7];
 // tìm xem trong mảng có bao nhiêu số chính phương
 
+for(let i=0;i<arr.length;i++){
+    for(let j=2;j<arr[i];j++){
+        if(j*j == arr[i]){
+            console.log(`${arr[i]} là số chính phương ${i}`);
+        }
+    }
+}
+
+
+// tìm vị trí số chẵn cuối cùng trong mảng
