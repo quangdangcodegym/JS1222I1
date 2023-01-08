@@ -54,50 +54,50 @@ Hàm: để thực hiên 1 chức năng nào đó
     }
     showInfoArray(arr);
     showInfoArray(numbers);
+    let size = 5;
+    let min = 0;
+    let max = 5;
+
+    function createArray(size, min, max) {
+        let arr = [];
+        for (let i = 0; i < size; i++) {
+            arr[i] = Math.floor(Math.random() * (max - min + 1) + min);
+        }
+        return arr;
+    }
+    let arr1 = createArray(size, min, max);
+    console.log(arr1);
+    let arr2 = createArray(10, 100, 200);
+    console.log(arr2);
+
+    // arr= [6,5,10,7]
+    // str = '6-5-10-7'
+    function join(arr, strSpecial){
+        let result = "";
+        for(let i=0;i<arr.length;i++){
+            if(i==arr.length-1){
+                result += arr[i];
+            }else{
+                result += arr[i] + strSpecial;
+            }
+        }
+        return result;
+    }
+    console.log(join(arr1, "--"));
+    console.log(join(arr2, "+"));
 
 **/
 
 // arr= [6,5,10,7]
 
 
-let size = 5;
-let min = 0;
-let max = 5;
 
-function createArray(size, min, max) {
-    let arr = [];
-    for (let i = 0; i < size; i++) {
-        arr[i] = Math.floor(Math.random() * (max - min + 1) + min);
-    }
-    return arr;
-}
-let arr1 = createArray(size, min, max);
-console.log(arr1);
-let arr2 = createArray(10, 100, 200);
-console.log(arr2);
-
-// arr= [6,5,10,7]
-// str = '6-5-10-7'
-function join(arr, strSpecial){
-    let result = "";
-    for(let i=0;i<arr.length;i++){
-        if(i==arr.length-1){
-            result += arr[i];
-        }else{
-            result += arr[i] + strSpecial;
-        }
-    }
-    return result;
-}
-console.log(join(arr1, "--"));
-console.log(join(arr2, "+"));
 
 /**
 // viết hàm:    + tìm xem trong mảng có bao nhiêu số chính phương
                 + tìm vị trí số chẵn cuối cùng trong mảng 
                 + viết hàm nối 2 mảng
                 + tìm xem số 1 có xuất hiện trong mảng hay không
-
 */
 
 
