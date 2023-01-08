@@ -61,13 +61,13 @@ for(let i=0;i<size;i++){
 console.log(arr);
 
 // tìm xem số 1 có xuất hiện trong mảng hay không
-let arr = [1, 8, 7, 10, 7, 5, 7, 7, 8, 7];
+let arr = [1, 8, 7, 1, 7, 5, 7, 1, 8, 7];
 console.log(arr);
 let value = 7;
 for(let i=0;i<arr.length;i++){
     if(arr[i]== value){
         console.log(`vi tri cua ${value} la: ${i}`);
-        break;
+       //break;
     }
 }
 
@@ -88,12 +88,27 @@ for(let i=0;i<arr.length;i++){
 }
 
 // tìm xem trong mảng có bao nhiêu số chính phương
-
+// arr = [4,7,1,9,5]
 for(let i=0;i<arr.length;i++){
+    // 4: 2,3
+    // 7: 2,3,4,5,6
     for(let j=2;j<arr[i];j++){
         if(j*j == arr[i]){
             console.log(`${arr[i]} là số chính phương ${i}`);
+        }else{
+            if(j*j > arr[i]){
+                break;
+            }
         }
+    }
+}
+
+
+// tìm vị trí số chẵn cuối cùng trong mảng
+for (let i = arr.length - 1; i >= 0; i--) {
+    if (arr[i] % 2 == 0) {
+        console.log(`So ${arr[i]} với vị trí cuối cùng là: ${i}`);
+        break;
     }
 }
 
@@ -108,13 +123,23 @@ for(let i=0;i<arr.length;i++){
 
 
 
-let arr = [4, 9, 7, 10, 4, 5, 7, 16, 3, 7];
+// let arr = [4, 9, 7, 10, 4, 5, 7, 16, 3, 7];
 
+let arr = [1,31,5,7,9,11,2,3];
 
-// tìm vị trí số chẵn cuối cùng trong mảng
+// tìm vị trí số chẵn cuối cùng trong mảng, 
+// nếu ko tìm thấy thì in ra ko tìm thấy
+let check = false;
 for (let i = arr.length - 1; i >= 0; i--) {
     if (arr[i] % 2 == 0) {
+        check = true;
         console.log(`So ${arr[i]} với vị trí cuối cùng là: ${i}`);
         break;
     }
 }
+if(check==false){
+    console.log("Khong tim thay");
+}
+
+//
+

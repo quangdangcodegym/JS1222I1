@@ -92,4 +92,13 @@ function join(arr, strSpecial){
 console.log(join(arr1, "--"));
 console.log(join(arr2, "+"));
 
+/**
+// viết hàm:    + tìm xem trong mảng có bao nhiêu số chính phương
+                + tìm vị trí số chẵn cuối cùng trong mảng 
+                + viết hàm nối 2 mảng
+                + tìm xem số 1 có xuất hiện trong mảng hay không
+
+*/
+
+
 
