@@ -27,7 +27,7 @@ Hàm: để thực hiên 1 chức năng nào đó
         return string/integer/array;
     }
     // Gọi hàm: call function, invoke function
-    tenHam(parameter)
+    tenHam(doiso)
 
 
     function getTotal(numbers){

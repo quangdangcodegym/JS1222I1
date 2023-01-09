@@ -5,9 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="func2.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <style>
+        .container{
+            width: 500px;
+        }
+        .main{
+            width: 100%;
+        }
+        .row{
+            width: 100%;
+        }
+        .studentId{
+            width: 20%;
+            float: left;
+        }
+        .studentName{
+            width: 60%;
+            float: left;
+        }
+        .studentIcon{
+            width: 20%;
+            float: left;
+        }
+        .main-header{
+            background-color: bisque;
+            overflow: hidden;
+            clear: both;
+        }
+        #frmEdit{
+            display: none;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="header">
+            <h3>JS1222I1</h3>
+        </div>
+        <div id="frmAdd">
+            <label>Nhập tên: </label>
+            <input type="text" id="idTxtNameAdd" placeholder="...."/>
+            <input type="button" value="Add" onclick="handleBtnAddClick()" />
+        </div>
+        <div id="frmEdit">
+            <label>Sửa tên: </label>
+            <input type="text" id="idTxtNameEdit" placeholder="...."/>
+            <input type="button" value="Edit" onclick="handleBtnEditClick()" />
+        </div>
+        <div class="main">
+            <div class="main-header">
+                <label for="" class="studentId">STT</label>
+                <label for="" class="studentName">Name</label>
+            </div>
+            <div class="main-container" id="idMainContainer">
+                
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>

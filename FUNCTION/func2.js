@@ -1,3 +1,7 @@
+
+let sum10 = function (a,b){
+
+}
 function sum(a,b){
     return a+b;
 }
@@ -11,6 +15,10 @@ let sum1 = (a,b) =>{
 let hello = () =>{
     console.log("Hello JS1222I1");
 }
+let hello1 = (a) =>{
+    console.log("Hello " + a);
+}
+let hello2 = a => console.log("Hello " + a);
 
 // Nếu trong thân hàm mà chỉ có 1 dòng lệnh thì có thể bỏ {}
 // let hello1 = () => console.log("Hello JS1222I1");
