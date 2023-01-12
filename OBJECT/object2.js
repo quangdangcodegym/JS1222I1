@@ -33,7 +33,7 @@ function Student(id, name, gender, hobbies){
     }
 }
 let s1 = new Student(1, "Huyen Trang", "Nu", ["Đá bóng", "Bida", "Cau long"]);
-let s2 = new Student(2, "Huong Do", "Nu", []);
+let s2 = new Student(2, "Huong Do", "Nu", ["Bida"]);
 
 let students = [s1, s2, new Student(3, "Anh Tài", "NAM", ["Bida", "đá bóng"])];
 
@@ -61,3 +61,16 @@ console.log(students[maxIndex].showInfo());
 
 // Liệt kê ra tất cả các sở thích của students
 // Tìm ra những người có chung sở thích
+
+
+let sothichs = new Set();
+for(let i=0;i<students.length;i++){
+    for(let j=0;j<students[i].hobbies.length;j++){
+        sothichs.add(students[i].hobbies[j]);
+    }
+}
+console.log(sothichs);
+
+
+
+

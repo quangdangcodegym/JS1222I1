@@ -48,6 +48,9 @@ function Car(colors, name){
         console.log(this.name + " - ", this.colors);
     }
 }
+function Car(colors, name){
+    // xu ly gi do
+}
 
 let mercedes1 = new Car(["Trắng", "Vàng"], "Mercedes GL200");
 mercedes1.toString();
