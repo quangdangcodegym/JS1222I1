@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="./images/pic_bulbon.gif" alt="" id="idLamp" onclick="handleImageClick()">
+    <div>
+        <button type="button" onclick="handleOn()">On</button>
+        <button type="button" onclick="handleOff()">Off</button>
+    </div>
+    <script>
+        function handleOn(){
+            document.getElementById("idLamp").src = "./images/pic_bulbon.gif";
+        }
+        function handleOff(){
+            document.getElementById("idLamp").src = "./images/pic_bulboff.gif";
+        }
+
+        function handleImageClick(){
+            let srcImage = document.getElementById("idLamp").src;
+            // srcImage: ./images/pic_bulbon.gif hoặc ./images/pic_bulboff.gif
+            if(srcImage.includes("bulbon")){
+                document.getElementById("idLamp").src = "./images/pic_bulboff.gif";
+            }else{
+                document.getElementById("idLamp").src = "./images/pic_bulbon.gif";
+            }
+        }
+    </script>
+</body>
+</html>

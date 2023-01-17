@@ -1,0 +1,12 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown{
+    margin-left: 50px;
+}
+
+ul{
+    list-style-type: none;
+}

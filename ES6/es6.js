@@ -1,7 +1,8 @@
 /**
  Map: theo dạng (key,value), key thì không được trùng lặp
  tạo ra 1 đối tượng kiểu Map
-const fruits = new Map();
+const fruits = new Map();   
+const fruits1 = new Map();
 
 // Set Map Values
 fruits.set("apples", 500);          // thêm giá trị vào map
@@ -21,6 +22,8 @@ letters.add("Quang");
 letters.add("Tai");
 letters.add("Tai");
 letters.add("SuBo");
+
+// delete
 console.log(letters);
 
 /**
@@ -120,7 +123,7 @@ for (let i = 0; i < stds.length; i++) {
 
 
 
-const cars1 = ["Saab", "Volvo", "BMW"];
+const cars1 = ["Saab", "Volvo", "BMW"];     // mảng
 const cars2 = ["Saab", "Volvo", ...["BMW", "AA", "BBB"]];
 
 
@@ -203,6 +206,7 @@ console.log(c1);
 cars2.concat()
 
 
+let 
 
 
 

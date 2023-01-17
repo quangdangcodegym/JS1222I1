@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <td colspan="4"><input type="text" value="" id="txtCalc"/></td>
+            </tr>
+            <tr>
+                <td><button class="operator" onclick="btnClick('+')">+</button></td>
+                <td><button class="operator"  onclick="btnClick('-')">-</button></td>
+                <td><button class="operator"  onclick="btnClick('*')">*</button></td>
+                <td><button class="operator"  onclick="btnClick('/')">/</button></td>
+            </tr>
+            <tr>
+                <td><button class="normal"  onclick="btnClick('7')">7</button></td>
+                <td><button class="normal"  onclick="btnClick('8')">8</button></td>
+                <td><button class="normal"  onclick="btnClick('9')">9</button></td>
+                <td rowspan="4"><button id="idEqual"  onclick="btnEqualClick()">=</button></td>
+            </tr>
+            <tr>
+                <td><button class="normal"  onclick="btnClick('4')">4</button></td>
+                <td><button class="normal"  onclick="btnClick('5')">5</button></td>
+                <td><button class="normal"  onclick="btnClick('6')">6</button></td>
+            </tr>
+            <tr>
+                <td><button class="normal"  onclick="btnClick('1')">1</button></td>
+                <td><button class="normal"  onclick="btnClick('2')">2</button></td>
+                <td><button class="normal"  onclick="btnClick('3')">3</button></td>
+            </tr>
+            <tr>
+                <td><button class="normal"  onclick="btnClick('0')">0</button></td>
+                <td><button class="normal"  onclick="btnClick('.')">.</button></td>
+                <td><button class="normal"  onclick="btnClear()">AC</button></td>
+            </tr>
+        </table>
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>

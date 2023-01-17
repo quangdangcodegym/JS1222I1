@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+.container{
+    width: 900px;
+    margin: 0 auto;
+}
+.create-request{
+    width: 100%;
+    background-color: lightgray;
+    padding: 10px;
+}
+.form-group{
+    display: flex;
+    margin: 5px 0px;
+}
+.form-group > label{
+    width: 130px;
+}
+.form-control{
+    width: 300px;
+    border-radius: 3px;
+    padding: 5px;
+    border: 1px solid black;
+}
+.btn{
+    padding: 5px 20px;
+    border: 1px solid gray;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+}
+.btn-warnning{
+    background-color: orange;
+}
+.btn-warnning:hover{
+    background-color: darkorange;
+}
+.table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.thead-dark{
+    background-color: gray;
+    color: white;
+}
+
+thead > tr > th{
+    padding: 7px 5px;
+    text-align: start;
+}
+
+tbody > tr > td{
+    padding: 7px 5px;
+}
+tbody > tr:nth-child(odd){
+    background-color: lightgray;
+}
+tbody > tr:hover{
+    background-color: darkgray;
+}
+.btn-success{
+    background-color: green;
+    
+}
+.btn-success{
+    background-color: darkgreen;
+}
+.btn-danger{
+    background-color: red;
+}
+.btn-danger:hover{
+    background-color: darkred;
+}
